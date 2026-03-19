@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            border: 2px solid black;
+            height: 100vh;
+            width: 100wh;
+        }
+        h2{
+            text-align: center;
+            text-decoration: solid;
+
+        }
+        button{
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+<body>
+<h2>Student Result</h2>
+<button onclick="result()" >Enter Marks</button>
+
+<p id="show"></p>
+
+<script>
+
+function result(){
+
+let subjects = prompt("How many subjects?");
+let total = 0;
+
+for(let i=1;i<=subjects;i++){
+let marks = prompt("Enter marks");
+total = total + Number(marks);
+}
+
+let average = total / subjects;
+
+let grade;
+
+if(average >= 50){
+grade = "Pass";
+}
+else{
+grade = "Fail";
+}
+
+document.getElementById("show").innerHTML =
+"Total = " + total +
+"<br>Average = " + average +
+"<br>Result = " + grade;
+
+}
+
+</script>
+
+</body>
+</html>
