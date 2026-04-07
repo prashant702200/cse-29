@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        input{height: 0.5;
+            width: 1cm;
+        }
+        h1{
+            text-align: center;
+            align-items: center;
+            background: green;
+            color: black;
+        }
+        form{
+            background: pink;
+        }
+        .cont{
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        
+
+        function CHECK (){
+            var a = parseInt(document.getElementById("n1").value)
+            var b = parseInt(document.getElementById("n2").value)
+            var c = parseInt(document.getElementById("n3").value)
+            var total = (a+b+c);
+            var per = (total*100/300);
+            document.write("ham kahat rahni total :", total , "<br>")
+            document.write("ham kahat rahni per :",per);
+        }
+
+
+    </script>
+    <h1>CHECK YOUR RESULT </h1>
+    <div class="cont">
+    <form>
+
+        sub 1: <input type="text" id="n1">
+         sub 2: <input type="text" id="n2">
+          sub 3: <input type="text" id="n3">
+          <button class="button" onclick="CHECK()">CHECK RESULT</button>
+    </form>
+    </div>
+    
+</body>
+</html>

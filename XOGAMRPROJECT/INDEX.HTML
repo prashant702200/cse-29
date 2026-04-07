@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+        }
+        input{
+            height: 0.5cm;
+            width: 1cm;
+        }
+        h1{
+            background: green; 
+            color: white;
+            text-align: center ;
+        }
+    </style>
+    <script>
+        function CHECK(){
+          var a = parseInt(document.getElementById("n1").value);
+var b = parseInt(document.getElementById("n2").value);
+var c = parseInt(document.getElementById("n3").value);
+var d = parseInt(document.getElementById("n4").value);
+var e = parseInt(document.getElementById("n5").value);
+
+            var total = a+b+c+d+e;
+            var percent = (a+b+c+d+e*100/500);
+            document.write("total marks =" , total , "<br>");
+            document.write("percent =" , percent);
+        } 
+    </script>
+</head>
+<body>
+    <h1>CHECK YOUR FINAL RESULT</h1>
+    <form>
+        ENGLISH : <input type="text" id="n1">
+        ENGLISH : <input type="text" id="n2">
+        ENGLISH : <input type="text" id="n3">
+        ENGLISH : <input type="text" id="n4">
+        ENGLISH : <input type="text" id="n5">
+        <button type="button" onclick="CHECK()">CHECK YOUR RESULT </button>
+    </form>
+    
+</body>
+</html>

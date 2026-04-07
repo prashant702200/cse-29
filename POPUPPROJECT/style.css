@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+.container{
+    width: 100wh;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background: rgb(113, 95, 235);
+    justify-content: center;
+}
+.btn{
+    padding: 10px 60px;
+    background: #1e9a26;
+    border: 0;
+    outline: none;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 90px;
+}
+.popup{
+    width: 400px;
+   background: #fff;
+   border-radius: 100px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% ,-50%);
+   padding: 0 30px 30px;
+}
+.popup imp{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+.popup{
+    
+
+}
