@@ -14,6 +14,3 @@ console.log(a>b); // == lose equality === strict equality //
 let age =12;
 let pus1 = (age>18) ? 'i can vote': 'i cannot vote';
 console.log(pus1)
-
-
-
