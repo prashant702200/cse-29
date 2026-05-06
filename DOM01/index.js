@@ -11,3 +11,7 @@ let parent =document.querySelector("#mydiv");
 let child = document.querySelector("fpara");
 
 parent.removechild(child);
+
+// dom manipulation 
+  let ele = document.getelementby("click");
+  console.log(ele)
