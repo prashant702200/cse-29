@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Home Page Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-header">
+    <div class="logo">amazon<span>.in</span></div>
+
+    <div class="delivery">
+      <small>Deliver to</small>
+      <strong>India</strong>
+    </div>
+
+    <form class="search-bar" id="searchForm">
+      <select id="categorySelect" aria-label="Choose category">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+        <option value="home">Home</option>
+        <option value="books">Books</option>
+      </select>
+      <input id="searchInput" type="search" placeholder="Search Amazon" aria-label="Search products">
+      <button type="submit">Search</button>
+    </form>
+
+    <nav class="header-links" aria-label="Account and orders">
+      <a href="#">Hello, sign in</a>
+      <a href="#">Returns & Orders</a>
+      <button class="cart-button" id="cartButton" type="button">Cart <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <nav class="sub-nav" aria-label="Main menu">
+    <button type="button" data-filter="all">All</button>
+    <button type="button" data-filter="electronics">Electronics</button>
+    <button type="button" data-filter="fashion">Fashion</button>
+    <button type="button" data-filter="home">Home & Kitchen</button>
+    <button type="button" data-filter="books">Books</button>
+    <button type="button" data-filter="deals">Today's Deals</button>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="tagline">Great Indian Shopping Week</p>
+        <h1>Everything you need, delivered fast.</h1>
+        <p>Shop phones, fashion, books, home essentials, and daily deals from one simple home page.</p>
+        <button id="shopDealsButton" type="button">Shop Deals</button>
+      </div>
+    </section>
+
+    <section class="info-strip" aria-label="Shopping benefits">
+      <div>
+        <strong>Free Delivery</strong>
+        <span>On eligible orders</span>
+      </div>
+      <div>
+        <strong>Secure Payments</strong>
+        <span>Multiple payment options</span>
+      </div>
+      <div>
+        <strong>Easy Returns</strong>
+        <span>Return within 7 days</span>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <h2>Shop by Category</h2>
+      <p id="resultText">Showing popular products</p>
+    </section>
+
+    <section class="category-grid" id="categoryGrid" aria-label="Categories"></section>
+
+    <section class="section-heading">
+      <h2>Featured Products</h2>
+      <p>Add products to the cart and try the search bar.</p>
+    </section>
+
+    <section class="product-grid" id="productGrid" aria-live="polite"></section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer>
+    <p>Amazon Web Page Project using HTML, CSS, and JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

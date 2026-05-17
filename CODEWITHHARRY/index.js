@@ -24,3 +24,12 @@ else {
   createdchild = document.createdchild("p")
   createdchild.innertext = "hello this is code babber"
   tn[0].appedchid(createdchild)
+
+  // events in js 
+   function clicked(){
+    console.log('this is my button');
+   }
+   // document load ho gya ye dekh tha hain 
+   window.onload = function (){
+    console.log('this docuent was clicked');
+   }
